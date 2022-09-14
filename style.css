@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body {
+    /* background-color: #f1f1f1; */
+    background: linear-gradient(90deg, #bfd2da, #efefef);
+    color: #3d3e41;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: #3d3e41;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+
+/* a:visited {
+    color: grey;
+} */
+
+.avatar {
+    height: 350px;
+    border-radius: 28px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+    pointer-events: none;
+}
+
+.info p {
+    color: #3d3e41;
+    margin: 0;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.info {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.info-text {
+    margin-left: 40px;
+    padding: 15px;
+}
+
+.info-text h4 {
+    margin-bottom: 10px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.bg-yelow {
+    background: linear-gradient(90deg, #d6dbbf, #acb1a0);
+}
+
+.bg-green {
+    background: #e5ffe7;
+}
+
+.card {
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.card h2 {
+    margin-bottom: 10px;
+}
+
+.list {
+    padding: 0 20px;
+}
+
+.list li {
+    color: #86898f;
+    margin-bottom: 10px;
+}
+
+.title {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.portfolio a {
+    background-color: #cbe0e9;
+    color: #3d3e41;
+    border-radius: 15px;
+    font-size: 16px;
+    padding: 5px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease-out;
+}
+
+.portfolio a:hover {
+    background-color: #a6d1e4;
+    color: black;
+    border-radius: 15px;
+    text-decoration: none;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-out;
+}
+
+.plagin-cards {
+    display: flex;
+}
+
+.slide {
+    height: 400px;
+    border-radius: 28px;
+    margin: 5px;
+    cursor: pointer;
+    color: white;
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: all 500ms ease-in-out;
+}
+
+.slide h3 {
+    position: absolute;
+    font-size: 24px;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+
+.slide.active {
+    flex: 6;
+}
+
+.slide.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media (max-width: 700px) {
+    .info {
+        display: block;
+        text-align: center;
+    }
+    .info-text {
+        margin-left: 0px;
+    }
+    .slide {
+        height: 200px;
+    }
+    .slide.active {
+        flex: 8;
+    }
+}
